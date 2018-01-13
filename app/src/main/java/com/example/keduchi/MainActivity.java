@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Dialog dialog;
     private Button btn_three;
     private Button btn_four;
+    private Button btn_five;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_three.setOnClickListener(this);
         btn_four = (Button) findViewById(R.id.btn_four);
         btn_four.setOnClickListener(this);
+        btn_five = (Button) findViewById(R.id.btn_five);
+        btn_five.setOnClickListener(this);
     }
 
     @Override
@@ -65,7 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             case R.id.btn_four:
-                startActivity(new Intent(MainActivity.this,FourActivity.class));
+                startActivity(new Intent(MainActivity.this, FourActivity.class));
+                break;
+            case R.id.btn_five:
+                startActivity(new Intent(MainActivity.this,FiveActivity.class));
                 break;
         }
     }
